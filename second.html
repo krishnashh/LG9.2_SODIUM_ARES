@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Second Page</title>
+  </head>
+  <body>
+    <img id="pic" src="cameow.jpg" width="500px" height="500px">
+    <button onclick="changeImage()">Change</button>
+    <button onclick="revertImage()">Revert</button>
+    <script>
+      var img = document.getElementById('pic');
+      var defPic = img.src;
+      var newPic = "doggo.jpg";
+
+      function changeImage() {
+        img.src = newPic;
+      }
+      function revertImage() {
+        img.src = defPic;
+      }
+    </script>
+  </body>
+</html>
